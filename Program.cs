@@ -3,35 +3,35 @@ class Program
 {
     static void Main(string[] args)
     {
-        //----Program mencari Luas Lingkaran dengan input jari-jari lingkaran----
+        //----Program input nama depan dan belakang anda----
 
         //Deklarasi Variabel
-        //Karena phi merupakan variabel yang tidak akan pernah berubah, maka digunakan konstanta
-        const double phi = 3.14;
-        double r, L;
+        String nama;
 
         //Deklarasi Variabel Input String
         /*Input pada C# menggunakan Console.ReadLine() yang bertipe string, maka diperlukan variabel input berupa string*/
-        String input;
+        String nama1, nama2;
 
         //---Beri Judul Program---
-        System.Console.WriteLine("---Program mencari Luas Lingkaran dengan input jari-jari lingkaran--- \n");
+        System.Console.WriteLine("---Program menyambungkan nama anda--- \n");
 
         //---Beri Statement Input---
-        //Input Jari-Jari
+        //Input Nama Depan
 
-        System.Console.Write("Masukkan Jari-Jari Lingkaran : ");
-        input = Console.ReadLine();
+        System.Console.Write("Masukkan Nama Depan anda : ");
+        nama1 = Console.ReadLine();
 
-        /*Karena inputan yang kemungkinan ada berupa double, maka digunakan Tryparse yang statementnya
-        tipedata.TryParse(variabelInputString, out namaVariabel);
-        */
-        double.TryParse(input, out r);
+        //Input Nama Belakang
+
+        System.Console.Write("Masukkan Nama Belakang anda : ");
+        nama2 = Console.ReadLine();
+
+        /*Karena inputan string, maka tidak diperlukan Tryparse */
 
         //Proses
-        L = phi * (r * r);
+        nama = nama1 + " " + nama2;
 
         //Output
-        System.Console.Write("Luas = " + L + "\n---Program By imamfh24---");
+        System.Console.Write("Nama Saya adalah = " + nama + "\n---Program By imamfh24---");
     }
 }
