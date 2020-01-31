@@ -3,37 +3,33 @@ class Program
 {
     static void Main(string[] args)
     {
-        //----Program mencari Luas persegi panjang dengan input----
+        //----Program mencari Luas Lingkaran dengan input jari-jari lingkaran----
 
         //Deklarasi Variabel
-        int p, l, L;
+        //Karena phi merupakan variabel yang tidak akan pernah berubah, maka digunakan konstanta
+        const double phi = 3.14;
+        double r, L;
 
         //Deklarasi Variabel Input String
         /*Input pada C# menggunakan Console.ReadLine() yang bertipe string, maka diperlukan variabel input berupa string*/
         String input;
 
         //---Beri Judul Program---
-        System.Console.WriteLine("---Program mencari Luas Persegi Panjang dengan input--- \n");
+        System.Console.WriteLine("---Program mencari Luas Lingkaran dengan input jari-jari lingkaran--- \n");
 
         //---Beri Statement Input---
-        //Input Panjang
+        //Input Jari-Jari
 
-        System.Console.Write("Masukkan Panjang : ");
+        System.Console.Write("Masukkan Jari-Jari Lingkaran : ");
         input = Console.ReadLine();
 
-        /*Karena inputan berupa integer, maka digunakan Tryparse yang statementnya
+        /*Karena inputan yang kemungkinan ada berupa double, maka digunakan Tryparse yang statementnya
         tipedata.TryParse(variabelInputString, out namaVariabel);
         */
-        int.TryParse(input, out p);
-
-        //Input Lebar (lakukan hal yang sama dengan input panjang)
-
-        System.Console.Write("Masukkan Lebar : ");
-        input = Console.ReadLine();
-        int.TryParse(input, out l);
+        double.TryParse(input, out r);
 
         //Proses
-        L = p * l;
+        L = phi * (r * r);
 
         //Output
         System.Console.Write("Luas = " + L + "\n---Program By imamfh24---");
