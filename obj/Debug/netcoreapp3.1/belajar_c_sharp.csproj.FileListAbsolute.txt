@@ -1,0 +1,11 @@
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.exe
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.deps.json
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.runtimeconfig.json
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.runtimeconfig.dev.json
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.dll
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\bin\Debug\netcoreapp3.1\belajar_c_sharp.pdb
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\obj\Debug\netcoreapp3.1\belajar_c_sharp.csprojAssemblyReference.cache
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\obj\Debug\netcoreapp3.1\belajar_c_sharp.AssemblyInfoInputs.cache
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\obj\Debug\netcoreapp3.1\belajar_c_sharp.AssemblyInfo.cs
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\obj\Debug\netcoreapp3.1\belajar_c_sharp.dll
+C:\Users\imamf\Documents\Program\C#\belajar_c_sharp\obj\Debug\netcoreapp3.1\belajar_c_sharp.pdb
