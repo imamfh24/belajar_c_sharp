@@ -3,7 +3,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //----Program menentukan bilangan ganjil genap----
+        //----Program menentukan tahun kabisat----
 
         //Deklarasi Variabel
         int angka;
@@ -13,12 +13,12 @@ class Program
         String input;
 
         //---Beri Judul Program---
-        System.Console.WriteLine("---Program menentukan bilangan ganjil genap--- \n");
+        System.Console.WriteLine("---Program menentukan tahun kabisat--- \n");
 
         //---Beri Statement Input---
-        //Input Nama Depan
+        //Input Tahun
 
-        System.Console.Write("Masukkan Angka : ");
+        System.Console.Write("Masukkan Tahun : ");
         input = Console.ReadLine();
 
         /*Karena inputan berupa integer, maka digunakan Tryparse yang statementnya
@@ -27,13 +27,21 @@ class Program
         int.TryParse(input, out angka);
 
         //Proses dan output
-        if (angka % 2 == 0)
+        //1 Cek dulu, pastikan inputan tidak menginput angka 0
+        if (angka == 0)
         {
-            System.Console.WriteLine("Angka " + angka + " merupakan angka Genap");
+            System.Console.WriteLine("Mohon masukkan tahun dengan benar");
         }
         else
         {
-            System.Console.WriteLine("Angka " + angka + " merupakan angka Ganjil");
+            if (angka % 4 == 0 || angka % 400 == 0)
+            {
+                System.Console.WriteLine(angka + " merupakan tahun kabisat");
+            }
+            else
+            {
+                System.Console.WriteLine(angka + " Bukan tahun kabisat");
+            }
         }
 
         //Output
