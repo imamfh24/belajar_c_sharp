@@ -3,45 +3,36 @@ class Program
 {
     static void Main(string[] args)
     {
-        //----Program menentukan tahun kabisat----
+        //----Program Lampu lalu lintas----
 
         //Deklarasi Variabel
-        int angka;
-
-        //Deklarasi Variabel Input String
-        /*Input pada C# menggunakan Console.ReadLine() yang bertipe string, maka diperlukan variabel input berupa string*/
-        String input;
+        string lampu;
 
         //---Beri Judul Program---
-        System.Console.WriteLine("---Program menentukan tahun kabisat--- \n");
+        System.Console.WriteLine("---Program Lampu lalu lintas--- \n");
 
         //---Beri Statement Input---
         //Input Tahun
 
-        System.Console.Write("Masukkan Tahun : ");
-        input = Console.ReadLine();
-
-        /*Karena inputan berupa integer, maka digunakan Tryparse yang statementnya
-        tipedata.TryParse(variabelInputString, out namaVariabel);
-        */
-        int.TryParse(input, out angka);
+        System.Console.Write("Masukkan Warna Lampu lalu lintas : ");
+        lampu = Console.ReadLine();
 
         //Proses dan output
-        //1 Cek dulu, pastikan inputan tidak menginput angka 0
-        if (angka == 0)
+        if (lampu.Equals("merah", StringComparison.InvariantCultureIgnoreCase))
         {
-            System.Console.WriteLine("Mohon masukkan tahun dengan benar");
+            System.Console.WriteLine("Berhenti");
+        }
+        else if (lampu.Equals("kuning", StringComparison.InvariantCultureIgnoreCase))
+        {
+            System.Console.WriteLine("Bersiap");
+        }
+        else if (lampu.Equals("hijau", StringComparison.InvariantCultureIgnoreCase))
+        {
+            System.Console.WriteLine("Jalan");
         }
         else
         {
-            if (angka % 4 == 0 || angka % 400 == 0)
-            {
-                System.Console.WriteLine(angka + " merupakan tahun kabisat");
-            }
-            else
-            {
-                System.Console.WriteLine(angka + " Bukan tahun kabisat");
-            }
+            System.Console.WriteLine("Warna " + lampu + " bukan warna lampu lalu lintas");
         }
 
         //Output
