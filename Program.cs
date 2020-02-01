@@ -3,35 +3,40 @@ class Program
 {
     static void Main(string[] args)
     {
-        //----Program mencari Luas Lingkaran dengan input jari-jari lingkaran----
+        //----Program menentukan bilangan ganjil genap----
 
         //Deklarasi Variabel
-        //Karena phi merupakan variabel yang tidak akan pernah berubah, maka digunakan konstanta
-        const double phi = 3.14;
-        double r, L;
+        int angka;
 
         //Deklarasi Variabel Input String
         /*Input pada C# menggunakan Console.ReadLine() yang bertipe string, maka diperlukan variabel input berupa string*/
         String input;
 
         //---Beri Judul Program---
-        System.Console.WriteLine("---Program mencari Luas Lingkaran dengan input jari-jari lingkaran--- \n");
+        System.Console.WriteLine("---Program menentukan bilangan ganjil genap--- \n");
 
         //---Beri Statement Input---
         //Input Jari-Jari
 
-        System.Console.Write("Masukkan Jari-Jari Lingkaran : ");
+        System.Console.Write("Masukkan Angka : ");
         input = Console.ReadLine();
 
-        /*Karena inputan yang kemungkinan ada berupa double, maka digunakan Tryparse yang statementnya
+        /*Karena inputan berupa integer, maka digunakan Tryparse yang statementnya
         tipedata.TryParse(variabelInputString, out namaVariabel);
         */
-        double.TryParse(input, out r);
+        int.TryParse(input, out angka);
 
-        //Proses
-        L = phi * (r * r);
+        //Proses dan output
+        if (angka % 2 == 0)
+        {
+            System.Console.WriteLine("Angka " + angka + " merupakan angka Genap");
+        }
+        else
+        {
+            System.Console.WriteLine("Angka " + angka + " merupakan angka Ganjil");
+        }
 
         //Output
-        System.Console.Write("Luas = " + L + "\n---Program By imamfh24---");
+        System.Console.Write("\n---Program By imamfh24---");
     }
 }
