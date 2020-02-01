@@ -10,7 +10,7 @@ class Program
 
         //Deklarasi Variabel Input String
         /*Input pada C# menggunakan Console.ReadLine() yang bertipe string, maka diperlukan variabel input berupa string*/
-        String nama1, nama2;
+        String input;
 
         //---Beri Judul Program---
         System.Console.WriteLine("---Program menentukan bilangan ganjil genap--- \n");
